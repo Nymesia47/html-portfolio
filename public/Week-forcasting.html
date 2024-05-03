@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focast Table Project</title>
+    <style>
+        h1 {
+            align-self: center;
+            color: orange;
+        }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid rgb(140 140 140);
+  font:
+    16px "Open Sans",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+caption {
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead > tr,
+tfoot > tr {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 4px 6px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Forcast Table Project</h1>
+    <h2>It's Always Sunny in Seville</h2>
+    <table>
+        <caption>A Week of Forcast in Seville</caption>
+        <thead>
+        <tr>
+            <th scope="col" rowspan="2">Day of the week</th>
+            <th scope="col" rowspan="2">Forcast</th>
+            <th scope="col" colspan="2">Temperature</th>
+        </tr>
+            <tr>
+            <th scope="col" rowspan="2">Low</th>
+            <th scope="col" rowspan="2">High</th>
+            
+            </tr>
+       </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Monday</th>
+            <td>Sunny</td>
+            <td>13*</td>
+            <td>26*</td>
+        </tr>
+        <tr>
+            <th scope="row">Tuesday</th>
+            <td>Sunny</td>
+            <td>13*</td>
+            <td>29*</td>
+        </tr>
+        <tr>
+            <th scope="row">Wednesday</th>
+            <td>Cloudy</td>
+            <td>15*</td>
+            <td>30*</td>
+        </tr>
+        <tr>
+            <th scope="row">Thursday</th>
+            <td>Partly Cloudy</td>
+            <td>16*</td>
+            <td>31*</td>
+        </tr>
+        <tr>
+            <th scope="row">Friday</th>
+            <td>Sunny</td>
+            <td>17*</td>
+            <td>30*</td>
+        </tr>
+        <tr>
+            <th scope="row">Saturday</th>
+            <td>Sunny</td>
+            <td>16*</td>
+            <td>30*</td>
+        </tr>
+        <tr>
+            <th scope="row">Sunday</th>
+            <td>Partly Cloudy</td>
+            <td>17*</td>
+            <td>29*</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row" colspan="2">Average Temperature</th>
+            <td>15*</td>
+            <td>29*</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
