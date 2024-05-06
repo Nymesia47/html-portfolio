@@ -8,12 +8,60 @@
         form {
             width: 600px;
             padding: 30px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: thistle;
+            border-radius: 5px;
         }
         label {
             font-size: 18px;
+            margin: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+        input {
+            width: 30px;
+            padding: 3px;
+            border: 1px solid grey;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+        button {
+            width:150px;
+            background: indigo;
+            color: whitesmoke;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px;
+            margin: 20px;
+            margin-bottom: 5px;
+            margin-left: 230px;
+        }
+        fieldset {
+            background: rgb(245, 219, 245);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 5px;
+            margin: 10px 5px;
+            padding:0%
         }
 
+        h1, h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: indigo;
+            font-weight: bold;
+        }
+
+        legend {
+            color: indigo;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        .text input {
+            width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -68,18 +116,33 @@
         </div>
     </fieldset>
     <fieldset>
-        <legend>Requesting Agent DetailS</legend>
-        <div>
+        <legend>Requesting Agent Details</legend>
+        <div class="text">
           <label for="codename">Enter your Spy Codename</label>
           <input type="text" id="codename" name="codename" placeholder="Codename" required>
         </div>
-        <div>
-          <label for="idnumber">Enter your Agent ID number</label>
+        <div class="text">
+          <label for="spyid">Enter your Agent ID number</label>
           <input type="password" id="spyid" name="spyid" placeholder="id number" required>
         </div>
-        <div>
+        <div class="text">
           <label for="email">Enter your email address</label>
-          <input type="email" id="email" name="email" placeholder="codename@ispy.com" required>
+          <input type="email" id="email" name="email" placeholder="codename@ispy.com" required autocomplete="email">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Collection Time and Location</legend>
+        <div class="text">
+        <label for="meeting-time">Choose a time:</label>
+        <input type="datetime-local" name="meeting-time" id="meeting-time" value="2024-05T11:50" min="2024-05T11:51">
+        <br>
+        <label for="location">Choose a location</label>
+        <select name="location" id="location">
+            <option value="Park">The Park</option>
+            <option value="Corner">Corner Ally</option>
+            <option value="Station">Train Station</option>
+            <option value="Cafe">Cafe</option>
+        </select>
         </div>
     </fieldset>
     <button>Place your Request</button>
