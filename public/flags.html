@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="flag">
-        <p>The Flag</p>
-        <div>
-          <div>
-            <p>of Laos</p>
-          </div>
+    <title>Countries where I lived</title>
+    <style>
+        .flag {
+            background-color: black;
+            border: outset black 0.5rem;
+            width: 600px;
+            height: 400px;
+            position:relative
+            
+        }
+
+        .flag > div {
+            position:absolute;
+        }
+        
+        #green {
+            background-color: #008C45;
+            width: 200px;
+            height: 400px;
+        }
+        
+        #white {
+            background-color: #F4F9FF;
+            width: 200px;
+            height: 400px;
+            margin-left: 200px;
+        }
+        
+        #red {
+            background-color: #CD212A;
+            width: 200px;
+            height: 400px;
+            margin-left: 400px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <h1>Coutries where I lived</h1>
+        <div class="flag" id="italy">
+            <div id="green"></div>
+            <div id="white"></div>
+            <div id="red"></div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
