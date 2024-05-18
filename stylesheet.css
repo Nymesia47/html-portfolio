@@ -1,5 +1,8 @@
-header {
+.header {
     background-color: #FFE382;
+    display: flex;
+    gap: 2rem;
+    
 }
 
 body {
@@ -17,6 +20,13 @@ body {
     flex-flow: wrap;
     gap: 2rem;
     justify-content: center;
+}
+
+.project img {
+    border: #FFE382 solid;
+    border-style: outset;
+    border-radius: 2%;
+    box-shadow: #FFE382;
 }
 
 
