@@ -5,7 +5,7 @@
   }
   
 .header {
-    background-color: #FFE382;
+    background-color: #C6EBC5;
     display: flex;
     gap: 2rem;
     width: 100%;
@@ -17,8 +17,12 @@ nav {
     align-self: flex-end;
 }
 
+nav > a {
+    color: #4d5a49;
+}
+
 body {
-    background-color: #FFF78A;
+    background-color: #FEFDED;
 }
 
 .main-content {
@@ -35,7 +39,7 @@ body {
 }
 
 .project img {
-    border: #FFE382 solid;
+    border: #C6EBC5 solid;
     border-style: outset;
     border-radius: 2%;
     box-shadow: #FFE382;
@@ -45,16 +49,29 @@ h1 {
     font-family: "Poetsen One";
     font-size: 3rem;
     font-weight: 100;
+    color: #FF52A2;   
 }
 
 h2 {
     font-family: "Poetsen One";
     font-size: 1.5rem;
     font-weight: 50;
+    color: #4d5a49;
+}
+
+h3 {
+    font-family: "Poetsen One";
+    font-size: 1rem;
+    font-weight: 50;
+    color: #4d5a49; 
 }
 
 
-
+.title {
+    font-size: 2rem;
+    color: #FF52A2;
+    text-align: center;
+}
 
 
 
