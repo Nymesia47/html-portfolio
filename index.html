@@ -1,37 +1,30 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gabriella Calvano's Portfolio</title>
+    <title>Gabriella Calvano's portfolio</title>
+    <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <h1>Gabriella Calvano's Portfolio</h1>
+    <header>
+    <h1>Gabriella Calvano</h1>
     <h2>Soon to be a Web Developer</h2>
-    <hr />
-    <h3>Click to view my latest Projects</h3>
+    </header>
+    <nav><a href="./public/about.html">About Me</a>
+        <a href="./public/contact.html">Contact Me</a>
+    </nav>
+    <h3>My latest Projects</h3>
+    <main>
     <ol>
-        <li><a href="./public/chocolate-ranking.html"><h3>Chocolate Ranking Project </h3> </a>
+        <div class="project"><li><a href="./public/chocolate-ranking.html"><h3>Chocolate Ranking Project </h3> </a>
             <img src="./assets/images/projects previews/Best chocolate candy.jpg" height="200" alt="Chocolate ranking project preview"/>
         </li>
-        <li><a href="./public/birthday-invite.html"><h3>Birthday Invite Project</h3></a>
+        </div>
+        <div><li><a href="./public/birthday-invite.html"><h3>Birthday Invite Project</h3></a>
             <img src="./assets/images/projects previews/Birthday Invite.jpg" height="200" alt=" Birthday invite project preview" />
         </li>
+        </div>
         <li>
             <a href="./public/Week-forcasting.html"><h3>Forecasting Table Project</h3></a>
             <img src="./assets/images/projects previews/Forecast Table Project.jpg" height="200" alt="Forecast table project preview">
@@ -46,9 +39,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
             <img src="./assets/images/projects previews/price table project.jpg" height="200" alt="Flexbox pricing Table preview">
         </li>
     </ol>
-    <hr />
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+    </main>
+    <footer></footer>
+    
+    
     
 </body>
 </html>
