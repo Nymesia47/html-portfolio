@@ -6,6 +6,17 @@ body {
     background-color: #FFF78A;
 }
 
+.main-content {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.main-content > ol {
+    display: flex;
+    flex-flow: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
 
 
 
