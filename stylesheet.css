@@ -8,7 +8,13 @@
     background-color: #FFE382;
     display: flex;
     gap: 2rem;
+    width: 100%;
+    justify-content: space-between;
     
+}
+
+nav {
+    align-self: flex-end;
 }
 
 body {
@@ -40,6 +46,13 @@ h1 {
     font-size: 3rem;
     font-weight: 100;
 }
+
+h2 {
+    font-family: "Poetsen One";
+    font-size: 1.5rem;
+    font-weight: 50;
+}
+
 
 
 
