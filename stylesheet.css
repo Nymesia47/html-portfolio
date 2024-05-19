@@ -37,7 +37,7 @@ body {
 .main-content > ol {
     display: flex;
     flex-flow: wrap;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
 }
 
