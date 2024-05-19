@@ -14,11 +14,14 @@
 }
 
 nav {
+    display: flex;
     align-self: flex-end;
 }
 
-nav > a {
-    color: #4d5a49;
+nav  a {
+    color: #4d5a49; 
+    padding: 10px;
+    
 }
 
 body {
@@ -71,6 +74,31 @@ h3 {
     font-size: 2rem;
     color: #FF52A2;
     text-align: center;
+}
+
+#about-me {
+    background-color: peachpuff;
+    width: 100px;
+    height: 50px;
+    line-height: 25px;
+    text-align: center; 
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    box-shadow: #4d5a49 5px 0;
+    margin-right: 6px;
+    
+}
+
+#contact-me {
+    display: flex;
+    background-color: cornsilk;
+    width: 100px;
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    box-shadow: #4d5a49 5px 0;
 }
 
 
