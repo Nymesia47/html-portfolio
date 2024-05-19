@@ -66,7 +66,8 @@ h3 {
     font-family: "Poetsen One";
     font-size: 1rem;
     font-weight: 50;
-    color: #4d5a49; 
+    color: #4d5a49;
+    text-align: center; 
 }
 
 
@@ -94,6 +95,25 @@ h3 {
 
 #contact-me {
     background-color: cornsilk;
+}
+
+.preview {
+    flex: 1;
+    width: 260px;
+    height: 260px;
+    border: 5px;
+    object-fit: fill;
+}
+
+.project {
+    width: 260px;
+    justify-items: center;
+}
+.project-description {
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 5px;
+
 }
 
 
