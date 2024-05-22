@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+    body {
+      gap: 30px;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding:0;
+    }
+
+    img {
+      width: 300px;
+    }
+    .grid-container {
+      margin: 10px;
+      background-color: #000;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      gap: 9px;
+    }
+    .container-one {
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 1fr 20px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .blue {
+      background-color: #004592;
+      
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+    .black {
+      background-color: #232629;
+    }
+    .white {
+      background-color: #F0F1EC;
+    }
+    .red.paintingone {
+        grid-area: 1/1/2/2;  
+    }
+
+    .blue.paintingone {
+        border-bottom: 10px solid #000;
+        grid-area: 2/4/3/5;
+    }
+
+    .one {
+      grid-area: 1/2/2/5;
+    }
+
+    .two {
+      grid-area: 2/1/4/2;
+    }
+
+    .three {
+      grid-area: 2/2/4/4;
+    }
+    .four {
+      grid-area: 3/4/5/5;
+    }
+
+    .container-two {
+        gap: 15px;
+        grid-template-columns: 150px 1fr 50px;
+        grid-template-rows: 230px 1fr 60px 80px;
+    }
+    .red.painting2 {
+        grid-area: 1/2/3/4;
+    }
+    .blue.painting2 {
+        grid-area: 3/1/5/2;
+    }
+    .yellow.painting2 {
+        grid-area: 4/3;
+        border-top: 20px solid;
+    }
+    .white.space3 {
+        grid-row: span 2;
+    }
+    .white.space2 {
+        border-top: 20px solid;
+    }
+
+    .container-3 {
+        grid-template-columns: 50px 85px 140px 1fr 1fr 35px 35px;
+        grid-template-rows: 20px 60px 60px 160px 120px 120px 30px 70px 50px;
+    }
+
+    .black.item-1 {
+        grid-area: 1/1/4/2;
+    }
+    .white.item-1 {
+        grid-area: 1/2/2/4;
+    }
+    .red.item-1 {
+        grid-area: 2/2/4/3;
+    }
+
+    .white.item-2 {
+      grid-area: 2/3/4/4;
+    }
+
+    .white.item-3 {
+      grid-area: 1/4/3/5;
+    }
+    .yellow.item-1 {
+      grid-area: 3/4/4/5;
+    }
+
+    .white.item-4 {
+      grid-area: 1/5/3/6;
+    }
+    .blue.item-1 {
+      grid-area: 3/5/4/6;
+    }
+
+    .yellow.item-2 {
+      grid-area: 1/6/4/8;
+    }
+    .white.item-5 {
+      grid-area: 4/1/6/2;
+    }
+    .blue.item-2 {
+      grid-area: 4/2/5/4;
+    }
+    .black.item-2 {
+      grid-area: 5/2/6/4;
+    }
+    .white.item-6 {
+      grid-area: 5/4/6/5;;
+    }
+    .black.item-3 {
+      grid-area: 5/5/7/6;
+    }
+    .red.item-2 {
+      grid-area: 4/6/7/7;
+    }
+    .white.item-7 {
+      grid-area: 4/7/7/8;
+    }
+    .white.item-8 {
+      grid-area: 6/1/8/3;
+    }
+    .red.item-3 {
+      grid-area: 6/3/9/4;
+    }
+    .blue.item-3 {
+      grid-area: 7/4/9/5;
+    }
+    .yellow.item-4 {
+      grid-area: 7/5/9/6;
+    }
+    .white.item-9 {
+      grid-area: 7/6/10/8;
+    }
+    .white.item-10 {
+      grid-area: 8/1/10/3;
+    }
+    .black.item-4 {
+      grid-area: 9/3/10/5;
+    }  
+
+    .display-picture {
+      display: flex;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+
+<body>
+    <h1>Mondrian Paintings with CSS Grid</h1>
+    <h2>Mondrian, Composition with Red, Blue, and Yellow</h2>
+    <div class="display-picture">
+      <div class="grid-container container-one">
+        <div class="red paintingone"></div>
+        <div class="white one"></div>
+        <div class="white two"></div>
+        <div class="white three"></div>
+        <div class="blue paintingone"></div>
+        <div class="white four"></div>
+        <div class="white five"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+      </div>
+      <img src="../assets/images/Projects pictures/Composition_No._III_with_red_blue_yellow_and_black_1929-1024x1020.jpg" alt="picture of the painting Composition No.3 with red blue yellow and black">
+    </div>
+    <div class="display-picture">
+      <div class="grid-container container-two">
+        <div class="white space1"></div>
+        <div class="white space2"></div>
+        <div class="red painting2"></div>
+        <div class="blue painting2"></div>
+        <div class="white space3"></div>
+        <div class="white space4"></div>
+        <div class="yellow painting2">
+      </div>
+      <img src="../assets/images/Projects pictures/composition with red blue and yellow.jpg" alt="picture of the painting Composition with red blue and yellow">
+    </div>
+    <div class="display-picture">
+      <div class="grid-container container-3">
+        <div class="black item-1"></div>
+        <div class="white item-1"></div>
+        <div class="red item-1"></div>
+        <div class="white item-2"></div>
+        <div class="white item-3"></div>
+        <div class="yellow item-1"></div>
+        <div class="white item-4"></div>
+        <div class="blue item-1"></div>
+        <div class="yellow item-2"></div>
+        <div class="white item-5"></div>
+        <div class="blue item-2"></div>
+        <div class="black item-2"></div>
+        <div class="yellow item-3"></div>
+        <div class="white item-6"></div>
+        <div class="white item-7"></div>
+        <div class="black item-3"></div>
+        <div class="red item-2"></div>
+        <div class="white item-8"></div>
+        <div class="white item-9"></div>
+        <div class="white item-10"></div>
+        <div class="red item-3"></div>
+        <div class="white item-11"></div>
+        <div class="blue item-3"></div>
+        <div class="yellow item-4"></div>
+        <div class="white item-12"></div>
+        <div class="black item-4"></div>
+        <div class="white item-13"></div>
+      </div>
+      <img src="../assets/images/Projects pictures/composition-a-1923.jpg!Large.jpg" alt="picture of the painting Composition A">
+    </div>
+
+</body>
+
+</html>
