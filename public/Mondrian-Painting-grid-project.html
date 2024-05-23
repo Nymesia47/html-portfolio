@@ -47,7 +47,21 @@
             width: 374px;
             height: 374px;
             background-color: #000;
+            display: grid;
+            gap: 4.5px;
         }
+        .red { background-color: #E72F24;}
+        .red { background-color: #E72F24;}
+        .blue { background-color: #004592;}
+        .yellow { background-color: #F9D01E;}
+        .black { background-color: #232629;}
+        .white { background-color: #F0F1EC;}
+        .project1 {
+            grid-template-columns: 160px 99px 76.5px 25px;
+            grid-template-rows: 207px 65px 1fr 10px;
+        }
+        .red.projectone { grid-area: 1/1/2/2;}
+      
     </style>
 </head>
 <body>
@@ -58,7 +72,17 @@
         <div class="project-container">
             <h2>Composition N.III with Red, Blue, and Yellow</h2>
             <img src="../assets/images/Projects pictures/Composition_No._III_with_red_blue_yellow_and_black_1929-1024x1020.jpg" alt="picture of the painting Composition No.3 with red blue yellow and black">
-            <div class="grid-container project1"></div>
+            <div class="grid-container project1">
+                <div class="red projectone"></div>
+                <div class="white one"></div>
+                <div class="white two"></div>
+                <div class="white three"></div>
+                <div class="blue projectone"></div>
+                <div class="white four"></div>
+                <div class="white five"></div>
+                <div class="yellow"></div>
+                <div class="black"></div>
+            </div>
         </div>
         <div class="project-container">
             <h2>Composition with red blue and yellow</h2>
