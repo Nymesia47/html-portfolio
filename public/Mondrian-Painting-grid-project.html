@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Painting CSS Grid</title>
+    <style>
+        header {
+            background-color: bisque;
+        }
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 4rem;
+            text-align: center;
+        }
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding:0;
+        }
+
+        .project-container {
+            flex:1;
+            background-color: bisque;
+            width: 600px;
+            height: 800px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 20px;
+            
+        }
+
+        img {
+            width: 250px;
+        }
+        .grid-container {
+            width: 374px;
+            height: 374px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mondrian Paintings with CSS Grid</h1>
+    </header>
+    <main>
+        <div class="project-container">
+            <h2>Composition N.III with Red, Blue, and Yellow</h2>
+            <img src="../assets/images/Projects pictures/Composition_No._III_with_red_blue_yellow_and_black_1929-1024x1020.jpg" alt="picture of the painting Composition No.3 with red blue yellow and black">
+            <div class="grid-container project1"></div>
+        </div>
+        <div class="project-container">
+            <h2>Composition with red blue and yellow</h2>
+            <img src="../assets/images/Projects pictures/composition with red blue and yellow.jpg" alt="picture of the painting Composition with red blue and yellow">
+            <div class="grid-container project2"></div>
+        </div>
+        <div class="project-container">
+            <h2>Composition A</h2>
+            <img src="../assets/images/Projects pictures/composition-a-1923.jpg!Large.jpg" alt="picture of the painting Composition A">
+            <div class="grid-container project2"></div>
+        </div>
+    </main>
+    
+</body>
+</html>
