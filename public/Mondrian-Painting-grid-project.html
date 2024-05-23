@@ -71,6 +71,19 @@
             border-bottom: 10px solid #000;
             grid-area: 2/4/3/5;
         }
+        .project2 {
+            grid-template-columns: 75px 1fr 25px;
+            grid-template-rows: 115px 1fr 30px 40px;
+            gap: 7.5px;
+        }
+        .red.painting2 { grid-area: 1/2/3/4;}
+        .blue.painting2 { grid-area: 3/1/5/2;}
+        .yellow.painting2 {
+            grid-area: 4/3;
+            border-top: 10px solid;
+        }
+        .white.space3 { grid-row: span 2;}
+        .white.space2 { border-top: 10px solid;}
       
     </style>
 </head>
@@ -97,7 +110,15 @@
         <div class="project-container">
             <h2>Composition with red blue and yellow</h2>
             <img src="../assets/images/Projects pictures/composition with red blue and yellow.jpg" alt="picture of the painting Composition with red blue and yellow">
-            <div class="grid-container project2"></div>
+            <div class="grid-container project2">
+                <div class="white space1"></div>
+                <div class="white space2"></div>
+                <div class="red painting2"></div>
+                <div class="blue painting2"></div>
+                <div class="white space3"></div>
+                <div class="white space4"></div>
+                <div class="yellow painting2"></div>
+            </div>
         </div>
         <div class="project-container">
             <h2>Composition A</h2>
